@@ -169,7 +169,7 @@ body {
   .flex-box {
     display: flex;
     flex-direction: row;
-    margin-top: 220px;
+    margin-top: 120px;
   }
   
   .round-img {

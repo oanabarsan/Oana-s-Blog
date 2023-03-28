@@ -17,6 +17,8 @@ body {
 .article-3 {
   text-align: justify;
   width: 70%; 
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
 }
 
 h1 {
@@ -48,6 +50,7 @@ h1 {
   width: 100%;
   column-gap: 15px;
 }
+
 
 /*Right side of the page*/
 .article-grid {

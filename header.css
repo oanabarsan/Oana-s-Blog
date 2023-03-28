@@ -64,6 +64,7 @@ body {
   padding: 5px 10px;
   align-items: center;
   width: 200px;
+  
 }
 
 .search-bar input {
@@ -85,12 +86,14 @@ body {
   margin-left: 190px;
   position: absolute;
 }
+
 .menu ul {
   padding-inline-start: 0;
 }
 .menu ul li {
   list-style-type: none;
   display: inline-block;
+  font-size: 1em;
 }
 
 .menu ul li:hover, nav ul li:active  {
@@ -108,7 +111,7 @@ body {
 /*Social media icons*/
 .social-media-icon {
   color: black;
-  font-size: 20px;
+  font-size: 1.2em;
   padding: 0 20px;
 }
 
@@ -126,6 +129,11 @@ body {
 .wrapper {
   display: none;
 }
+
+nav .sidebar-social-media {
+  display: none;
+}
+
 
 /*Side bar responsive*/
 @media (min-width: 300px) and (max-width: 750px) {
@@ -145,7 +153,9 @@ body {
     font-size:13px;
   }
 
-
+  .sidebar-social-media {
+    display: none;
+  }
   .wrapper {
     height: 100%;
     width: 300px;
@@ -176,13 +186,13 @@ body {
   }
 
 
-#btn:checked ~.menu-btn {
-  top: -45px;
-  right: 270px;
-}
-#btn:checked ~ .menu-btn i:before {
-  content: "\f00d";
-}
+  #btn:checked ~.menu-btn {
+    top: -45px;
+    right: 270px;
+  }
+  #btn:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
 
   
   .wrapper #sidebar {
@@ -246,44 +256,44 @@ body {
     transition: all .3s ease;
 }
 
-#sidebar .items-list li a i {
-  margin-right: 20px;
+  #sidebar .items-list li a i {
+    margin-right: 20px;
+  }
+
+  #sidebar .items-list .icons  {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    
+  }
+
+  #sidebar .items-list .icons a {
+    margin: 0 5px;
+    color: black;
+    display: block;
+    height: 35px;
+    width: 35px;
+    background-color: rgb(230, 207, 209);
+    border: 1px solid rgb(203, 172, 175);
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    transition: all .3s ease;
+  }
+
+  #sidebar .items-list .icons a:hover {
+    background-color: rgb(205, 183, 185);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all 0.3s ease;
+  }
 }
 
-#sidebar .items-list .icons  {
-  height: 40px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40px;
-  
-}
-
-#sidebar .items-list .icons a {
-  margin: 0 5px;
-  color: black;
-  display: block;
-  height: 35px;
-  width: 35px;
-  background-color: rgb(230, 207, 209);
-  border: 1px solid rgb(203, 172, 175);
-  text-align: center;
-  line-height: 35px;
-  border-radius: 5px;
-  transition: all .3s ease;
-}
-
-#sidebar .items-list .icons a:hover {
-  background-color: rgb(205, 183, 185);
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  transition: all 0.3s ease;
-}
-}
-
-@media (min-width: 751px) and (max-width: 1200px) {
+@media (min-width: 751px) and (max-width: 1000px) {
   .logo {
-    width: 300px;
+    width: 250px;
   }
 
   .oana {
@@ -292,21 +302,73 @@ body {
   .quote {
     font-size:13px;
   }
-
+ .right-side {
+  justify-content: space-around;
+ }
   .search-bar {
     width: 150px;
   }
 
-  .search-bar input {
-    width: 150px;
+  .social-media {
+    display: none;
   }
 
+  nav .sidebar-social-media {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 70.5px;
+    right: 0;
+    width: 30px;
+    height:110px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+  }
+  nav .sidebar-social-media-icon {
+    color: black;
+    font-size: 1.3em;
+  }
+
+  .menu ul li {
+    font-size: 0.8em;
+    
+  }
+
+  .menu ul li {
+    font-size: 0.8em;
+    
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
   .right-side {
-    font-size: 12px;
+    font-size: 1em;
+    justify-content: space-around;
   }
 
- .social-media-icon {
-    font-size: 12px;
-    padding: 0 10px;
+  .social-media {
+    display: none;
+  }
+
+  nav .sidebar-social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 30px;
+    height:80px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+  }
+
+  nav .sidebar-social-media-icon {
+    color: black;
+    font-size: 1.3em;
   }
 }
