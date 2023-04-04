@@ -116,7 +116,10 @@ body {
   padding: 0 20px;
 }
 
-
+.social-media-icon:hover, .social-media-icon:active  {
+  color: rgb(239, 199, 204);
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .social-media {
   display:flex;
   align-items: center;
@@ -306,7 +309,7 @@ nav .sidebar-social-media {
   }
  .right-side {
   justify-content: space-around;
- }
+  }
   .search-bar {
     width: 150px;
   }
@@ -334,6 +337,12 @@ nav .sidebar-social-media {
     font-size: 1.3em;
   }
 
+  nav .sidebar-social-media-icon:hover,
+  nav .sidebar-social-media-icon:active {
+    color: rgb(239, 199, 204);
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
   .menu ul li {
     font-size: 0.8em;
     
@@ -356,15 +365,16 @@ nav .sidebar-social-media {
   }
 
   nav .sidebar-social-media {
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    top: 70px;
+    top: 70.5px;
     right: 0;
     width: 30px;
-    height:80px;
+    height:110px;
     border-bottom: 1px solid black;
     border-left: 1px solid black;
   }
@@ -372,5 +382,11 @@ nav .sidebar-social-media {
   nav .sidebar-social-media-icon {
     color: black;
     font-size: 1.3em;
+  }
+
+  nav .sidebar-social-media-icon:hover,
+  nav .sidebar-social-media-icon:active {
+    color: rgb(239, 199, 204);
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
