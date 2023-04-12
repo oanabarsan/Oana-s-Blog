@@ -80,6 +80,9 @@ h3 {
   border-radius: 20px;
 }
 
+.article-grid:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 .photo-grid-1 {
   width: 100%;

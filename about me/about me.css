@@ -50,6 +50,7 @@ text-align: justify;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .corfu-chicago {
   display: flex;
   flex-direction: row;
@@ -64,6 +65,7 @@ text-align: justify;
   margin-bottom: 50px;
 
 }
+
 
 @media (min-width: 350px) {
   section {
