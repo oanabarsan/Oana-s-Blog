@@ -352,6 +352,12 @@ nav .sidebar-social-media {
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
+  nav .sidebar-social-media-icon:hover,
+  nav .sidebar-social-media-icon:active {
+    color: rgb(239, 199, 204);
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
   .menu ul li {
     font-size: 0.8em;
     
